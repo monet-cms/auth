@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Monet\Framework\Auth\Http\Controllers\LoginController;
+use Monet\Framework\Auth\Http\Controllers\RegisterController;
 
 $routes = config('monet.auth.routes', []);
 
@@ -28,5 +29,31 @@ if (isset($routes['login.store'])) {
         data_get($route, 'controller', [LoginController::class, 'store'])
     )
         ->middleware(data_get($route, 'middleware', 'web'))
-        ->name('login.authenticate');
+        ->name('login.store');
+}
+
+if (isset($routes['register'])) {
+    $route = is_array($routes['register'])
+        ? $routes['register']
+        : ['path' => $routes['register']];
+
+    Route::get(
+        $route['path'],
+        data_get($route, 'controller', [RegisterController::class, 'show'])
+    )
+        ->middleware(data_get($route, 'middleware', 'web'))
+        ->name('register');
+}
+
+if (isset($routes['register.store'])) {
+    $route = is_array($routes['register.store'])
+        ? $routes['register.store']
+        : ['path' => $routes['register.store']];
+
+    Route::post(
+        $route['path'],
+        data_get($route, 'controller', [RegisterController::class, 'store'])
+    )
+        ->middleware(data_get($route, 'middleware', 'web'))
+        ->name('register.store');
 }
