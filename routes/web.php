@@ -14,7 +14,7 @@ if (isset($routes['login'])) {
         $route['path'],
         data_get($route, 'controller', [LoginController::class, 'show'])
     )
-        ->middleware(data_get($route, 'middleware', []))
+        ->middleware(data_get($route, 'middleware', 'web'))
         ->name('login');
 }
 
@@ -27,6 +27,6 @@ if (isset($routes['login.store'])) {
         $route['path'],
         data_get($route, 'controller', [LoginController::class, 'store'])
     )
-        ->middleware(data_get($route, 'middleware', []))
+        ->middleware(data_get($route, 'middleware', 'web'))
         ->name('login.authenticate');
 }
