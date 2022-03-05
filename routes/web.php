@@ -19,9 +19,9 @@ if (isset($routes['login'])) {
 }
 
 if (isset($routes['login.store'])) {
-    $route = is_array($routes['login.authenticate'])
-        ? $routes['login.authenticate']
-        : ['path' => $routes['login.authenticate']];
+    $route = is_array($routes['login.store'])
+        ? $routes['login.store']
+        : ['path' => $routes['login.store']];
 
     Route::post(
         $route['path'],
