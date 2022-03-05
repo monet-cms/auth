@@ -27,5 +27,7 @@ class AuthServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../resources/views' => resource_path('views/vendor/monet/auth')
         ]);
+
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
     }
 }
