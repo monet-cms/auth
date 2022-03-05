@@ -14,7 +14,7 @@
             <div>
                 <label>
                     <span>Name</span>
-                    <input type="email" name="email" value="{{old('name')}}"/>
+                    <input type="text" name="name" value="{{old('name')}}"/>
 
                     @error('name')
                     <span>{{$message}}</span>
