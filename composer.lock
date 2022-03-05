@@ -1146,12 +1146,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/monet-cms/support.git",
-                "reference": "80fa86262c914f689cf035e9c3925f94be2dff52"
+                "reference": "80d5e763d7cfabf1439a3f90941724ee1752de47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/monet-cms/support/zipball/80fa86262c914f689cf035e9c3925f94be2dff52",
-                "reference": "80fa86262c914f689cf035e9c3925f94be2dff52",
+                "url": "https://api.github.com/repos/monet-cms/support/zipball/80d5e763d7cfabf1439a3f90941724ee1752de47",
+                "reference": "80d5e763d7cfabf1439a3f90941724ee1752de47",
                 "shasum": ""
             },
             "require": {
@@ -1161,7 +1161,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Monet\\Support\\": "src/"
+                    "Monet\\Framework\\Support\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1178,7 +1178,7 @@
                 "issues": "https://github.com/monet-cms/support/issues",
                 "source": "https://github.com/monet-cms/support/tree/main"
             },
-            "time": "2022-03-05T02:14:04+00:00"
+            "time": "2022-03-05T16:41:26+00:00"
         },
         {
             "name": "monolog/monolog",
