@@ -8,8 +8,19 @@
         <title>Login</title>
     </head>
     <body>
-        <form method="POST" action="{{route('login.authenticate')}}">
+        <form method="POST" action="{{route('register.store')}}">
             @csrf
+
+            <div>
+                <label>
+                    <span>Name</span>
+                    <input type="email" name="email" value="{{old('name')}}"/>
+
+                    @error('name')
+                    <span>{{$message}}</span>
+                    @enderror
+                </label>
+            </div>
 
             <div>
                 <label>
@@ -28,6 +39,17 @@
                     <input type="password" name="password"/>
 
                     @error('password')
+                    <span>{{$message}}</span>
+                    @enderror
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <span>Password confirmation</span>
+                    <input type="password" name="password_confirmation"/>
+
+                    @error('password_confirmation')
                     <span>{{$message}}</span>
                     @enderror
                 </label>

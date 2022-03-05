@@ -8,7 +8,7 @@
         <title>Login</title>
     </head>
     <body>
-        <form method="POST" action="{{route('login.authenticate')}}">
+        <form method="POST" action="{{route('login.store')}}">
             @csrf
 
             <div>
@@ -30,6 +30,13 @@
                     @error('password')
                     <span>{{$message}}</span>
                     @enderror
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="remember"/>
+                    Remember me
                 </label>
             </div>
 
