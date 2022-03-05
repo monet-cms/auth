@@ -1,0 +1,23 @@
+{
+    "name": "monet/auth",
+    "description": "The auth component for the Monet framework.",
+    "keywords": [
+        "monet-cms",
+        "laravel",
+        "auth"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Monet\\Auth\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
