@@ -1146,17 +1146,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/monet-cms/support.git",
-                "reference": "0f7e03f734177dd716c281e282fbb32048c04aa8"
+                "reference": "e57542c7c89dd6dfc359e7e9830a01b3712aa393"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/monet-cms/support/zipball/0f7e03f734177dd716c281e282fbb32048c04aa8",
-                "reference": "0f7e03f734177dd716c281e282fbb32048c04aa8",
+                "url": "https://api.github.com/repos/monet-cms/support/zipball/e57542c7c89dd6dfc359e7e9830a01b3712aa393",
+                "reference": "e57542c7c89dd6dfc359e7e9830a01b3712aa393",
                 "shasum": ""
             },
             "require": {
-                "illuminate/database": "^9.3",
-                "illuminate/filesystem": "^9.3",
+                "laravel/framework": "^9.3",
                 "php": "^8.0"
             },
             "default-branch": true,
@@ -1180,7 +1179,7 @@
                 "issues": "https://github.com/monet-cms/support/issues",
                 "source": "https://github.com/monet-cms/support/tree/main"
             },
-            "time": "2022-03-06T00:09:31+00:00"
+            "time": "2022-03-06T03:35:52+00:00"
         },
         {
             "name": "monolog/monolog",
