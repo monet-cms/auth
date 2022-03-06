@@ -12,7 +12,7 @@ class AuthServiceProvider extends ServiceProvider
         $package
             ->name('monet.auth')
             ->hasConfig()
-            ->hasRoute('web.php')
+            ->hasRoute('web')
             ->hasViews()
             ->hasMigrations([
                 'create_users_table',
